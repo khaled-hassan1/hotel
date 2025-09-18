@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ION Hotel Riyadh - فندق أيون الرياض</title>
+
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand d-flex align-items-center">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80"
+                        alt="ION Hotel" class="logo px-3">
+                    <h1 class="my-0 hotel-name">ION Hotel</h1>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav px-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#branches" data-ar="الفروع"
+                                data-en="Branches">الفروع</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#rooms" data-ar="الغرف" data-en="Rooms">الغرف</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services" data-ar="الخدمات"
+                                data-en="Services">الخدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact" data-ar="اتصل بنا" data-en="Contact">اتصل
+                                بنا</a>
+                        </li>
+                    </ul>
+
+                    <div class="language-switcher">
+                        <button class="btn btn-outline-primary btn-sm lang-btn active" data-lang="ar">العربية</button>
+                        <button class="btn btn-outline-primary btn-sm lang-btn" data-lang="en">English</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative" style="height: 70vh;">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            class="w-100 h-100" style="object-fit: cover; filter: brightness(0.6);" alt="ION Hotel Riyadh">
+
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+            <div class="container text-center text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold my-4" data-ar="فندق أيون الرياض" data-en="ION Hotel Riyadh">
+                            فندق أيون الرياض
+                        </h1>
+                        <p class="lead my-5" data-ar="في قلب العاصمة السعودية"
+                            data-en="In the heart of Saudi Arabia's capital">
+                            في قلب العاصمة السعودية
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branch Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold text-primary my-4" data-ar="عن فندق أيون الرياض"
+                        data-en="About ION Hotel Riyadh">
+                        عن فندق أيون الرياض
+                    </h2>
+
+                    <p class="lead my-4"
+                        data-ar="يقع فندق أيون الرياض في موقع استراتيجي في حي الملز، أحد أرقى أحياء العاصمة السعودية. يوفر الفندق تجربة إقامة فاخرة مع إطلالات رائعة على أفق المدينة الحديثة."
+                        data-en="ION Hotel Riyadh is strategically located in Al Malaz district, one of the most prestigious neighborhoods in the Saudi capital. The hotel offers a luxurious stay experience with stunning views of the modern city skyline.">
+                        يقع فندق أيون الرياض في موقع استراتيجي في حي الملز، أحد أرقى أحياء العاصمة السعودية. يوفر الفندق
+                        تجربة إقامة فاخرة مع إطلالات رائعة على أفق المدينة الحديثة.
+                    </p>
+
+                    <div class="row g-4 my-5">
+                        <div class="col-md-6">
+                            <div class="feature-box p-4 bg-light rounded">
+                                <i class="fas fa-building fa-2x text-primary my-3"></i>
+                                <h4 data-ar="الموقع المتميز" data-en="Prime Location">الموقع المتميز</h4>
+                                <p data-ar="قريب من المراكز التجارية والمعالم السياحية الرئيسية في الرياض"
+                                    data-en="Close to shopping centers and major tourist attractions in Riyadh">
+                                    قريب من المراكز التجارية والمعالم السياحية الرئيسية في الرياض
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box p-4 bg-light rounded">
+                                <i class="fas fa-car fa-2x text-primary my-3"></i>
+                                <h4 data-ar="سهولة الوصول" data-en="Easy Access">سهولة الوصول</h4>
+                                <p data-ar="على بعد 30 دقيقة من مطار الملك خالد الدولي"
+                                    data-en="30 minutes from King Khalid International Airport">
+                                    على بعد 30 دقيقة من مطار الملك خالد الدولي
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="fw-bold text-primary my-4" data-ar="المرافق والخدمات" data-en="Facilities & Services">
+                        المرافق والخدمات</h3>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="150 غرفة وجناح فاخر" data-en="150 luxury rooms and suites">150 غرفة
+                                        وجناح فاخر</span></li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="3 مطاعم متخصصة" data-en="3 specialty restaurants">3 مطاعم متخصصة</span>
+                                </li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="مركز أعمال متكامل" data-en="Full business center">مركز أعمال
+                                        متكامل</span></li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="قاعات اجتماعات ومؤتمرات" data-en="Meeting and conference halls">قاعات
+                                        اجتماعات ومؤتمرات</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="نادي صحي ومسبح" data-en="Health club and pool">نادي صحي ومسبح</span>
+                                </li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="سبا ومركز تجميل" data-en="Spa and beauty center">سبا ومركز تجميل</span>
+                                </li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="مواقف سيارات مجانية" data-en="Free parking">مواقف سيارات مجانية</span>
+                                </li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="خدمة الواي فاي المجانية" data-en="Free WiFi service">خدمة الواي فاي
+                                        المجانية</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="my-0" data-ar="معلومات التواصل" data-en="Contact Information">معلومات التواصل
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-item d-flex align-items-center my-3">
+                                <i class="fas fa-map-marker-alt fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="العنوان:" data-en="Address:">العنوان:</strong><br>
+                                    <span data-ar="الرياض، حي الملز، شارع الأمير محمد بن عبدالعزيز"
+                                        data-en="Riyadh, Al Malaz District, Prince Mohammed bin Abdulaziz Street">
+                                        الرياض، حي الملز، شارع الأمير محمد بن عبدالعزيز
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item d-flex align-items-center my-3">
+                                <i class="fas fa-phone fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="الهاتف:" data-en="Phone:">الهاتف:</strong><br>
+                                    <span>+966 11 123 4567</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item d-flex align-items-center my-3">
+                                <i class="fas fa-envelope fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="البريد الإلكتروني:" data-en="Email:">البريد
+                                        الإلكتروني:</strong><br>
+                                    <span>riyadh@ionhotel.com</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item d-flex align-items-center my-4">
+                                <i class="fas fa-clock fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="ساعات العمل:" data-en="Working Hours:">ساعات العمل:</strong><br>
+                                    <span data-ar="24 ساعة يومياً" data-en="24 hours daily">24 ساعة يومياً</span>
+                                </div>
+                            </div>
+
+                            <a href="index.html#contact" class="btn btn-primary w-100" data-ar="احجز الآن"
+                                data-en="Book Now">
+                                احجز الآن
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h2 class="display-5 fw-bold text-primary" data-ar="صور الفندق" data-en="Hotel Gallery">صور الفندق
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="ION Hotel Riyadh"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Hotel Room"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Hotel Lobby"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Restaurant"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Pool Area"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Suite"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="my-3">ION Hotel Riyadh</h3>
+                    <p data-ar="فندق أيون الرياض - تجربة إقامة فاخرة في قلب العاصمة"
+                        data-en="ION Hotel Riyadh - Luxury accommodation experience in the heart of the capital">
+                        فندق أيون الرياض - تجربة إقامة فاخرة في قلب العاصمة
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="my-3" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="index.html" class="text-light text-decoration-none" data-ar="الرئيسية"
+                                data-en="Home">الرئيسية</a></li>
+                        <li class="my-2"><a href="index.html#branches" class="text-light text-decoration-none"
+                                data-ar="الفروع" data-en="Branches">الفروع</a></li>
+                        <li class="my-2"><a href="index.html#rooms" class="text-light text-decoration-none"
+                                data-ar="الغرف" data-en="Rooms">الغرف</a></li>
+                        <li class="my-2"><a href="index.html#services" class="text-light text-decoration-none"
+                                data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="my-3" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h3>
+                    <p><i class="fas fa-phone px-2"></i> +966 11 123 4567</p>
+                    <p><i class="fas fa-envelope px-2"></i> riyadh@ionhotel.com</p>
+                    <p><i class="fas fa-map-marker-alt px-2"></i> <span data-ar="الرياض، حي الملز"
+                            data-en="Riyadh, Al Malaz">الرياض، حي الملز</span></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="my-0" data-ar="&copy; 2025 ION Hotel. جميع الحقوق محفوظة."
+                        data-en="&copy; 2025 ION Hotel. All rights reserved.">
+                        &copy; 2025 ION Hotel. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

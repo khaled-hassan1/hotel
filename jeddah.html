@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ION Hotel Jeddah - فندق أيون جدة</title>
+
+    <!-- Bootstrap RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand d-flex align-items-center">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80"
+                        alt="ION Hotel" class="logo px-3">
+                    <h1 class="my-0 hotel-name">ION Hotel</h1>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav px-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#branches" data-ar="الفروع"
+                                data-en="Branches">الفروع</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#rooms" data-ar="الغرف" data-en="Rooms">الغرف</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services" data-ar="الخدمات"
+                                data-en="Services">الخدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact" data-ar="اتصل بنا" data-en="Contact">اتصل
+                                بنا</a>
+                        </li>
+                    </ul>
+
+                    <div class="language-switcher">
+                        <button class="btn btn-outline-primary btn-sm lang-btn active" data-lang="ar">العربية</button>
+                        <button class="btn btn-outline-primary btn-sm lang-btn" data-lang="en">English</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative" style="height: 70vh;">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            class="w-100 h-100" style="object-fit: cover; filter: brightness(0.6);" alt="ION Hotel Jeddah">
+
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+            <div class="container text-center text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold my-4" data-ar="فندق أيون جدة" data-en="ION Hotel Jeddah">
+                            فندق أيون جدة
+                        </h1>
+                        <p class="lead my-5" data-ar="على ساحل البحر الأحمر الساحر"
+                            data-en="On the enchanting Red Sea coast">
+                            على ساحل البحر الأحمر الساحر
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branch Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold text-primary my-4" data-ar="عن فندق أيون جدة"
+                        data-en="About ION Hotel Jeddah">
+                        عن فندق أيون جدة
+                    </h2>
+
+                    <p class="lead my-4"
+                        data-ar="يقع فندق أيون جدة على كورنيش جدة الشهير، مطلاً على البحر الأحمر مباشرة. يوفر الفندق تجربة إقامة استثنائية تجمع بين الفخامة العصرية والضيافة العربية الأصيلة، مع إطلالات بحرية خلابة."
+                        data-en="ION Hotel Jeddah is located on the famous Jeddah Corniche, directly overlooking the Red Sea. The hotel offers an exceptional stay experience that combines modern luxury with authentic Arabian hospitality, featuring stunning sea views.">
+                        يقع فندق أيون جدة على كورنيش جدة الشهير، مطلاً على البحر الأحمر مباشرة. يوفر الفندق تجربة إقامة
+                        استثنائية تجمع بين الفخامة العصرية والضيافة العربية الأصيلة، مع إطلالات بحرية خلابة.
+                    </p>
+
+                    <div class="row g-4 my-5">
+                        <div class="col-md-6">
+                            <div class="feature-box p-4 bg-light rounded">
+                                <i class="fas fa-water fa-2x text-primary my-3"></i>
+                                <h4 data-ar="إطلالة بحرية" data-en="Sea View">إطلالة بحرية</h4>
+                                <p data-ar="إطلالات مباشرة على البحر الأحمر من معظم الغرف والأجنحة"
+                                    data-en="Direct Red Sea views from most rooms and suites">
+                                    إطلالات مباشرة على البحر الأحمر من معظم الغرف والأجنحة
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box p-4 bg-light rounded">
+                                <i class="fas fa-plane fa-2x text-primary my-3"></i>
+                                <h4 data-ar="قريب من المطار" data-en="Near Airport">قريب من المطار</h4>
+                                <p data-ar="على بعد 20 دقيقة من مطار الملك عبدالعزيز الدولي"
+                                    data-en="20 minutes from King Abdulaziz International Airport">
+                                    على بعد 20 دقيقة من مطار الملك عبدالعزيز الدولي
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="fw-bold text-primary my-4" data-ar="المرافق والخدمات" data-en="Facilities & Services">
+                        المرافق والخدمات</h3>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="200 غرفة وجناح بإطلالة بحرية"
+                                        data-en="200 rooms and suites with sea view">200 غرفة وجناح بإطلالة بحرية</span>
+                                </li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="4 مطاعم ومقاهي متنوعة" data-en="4 diverse restaurants and cafes">4
+                                        مطاعم ومقاهي متنوعة</span></li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="شاطئ خاص للنزلاء" data-en="Private beach for guests">شاطئ خاص
+                                        للنزلاء</span></li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="مركز غوص وأنشطة بحرية"
+                                        data-en="Diving center and marine activities">مركز غوص وأنشطة بحرية</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="مسبح لا متناهي مطل على البحر"
+                                        data-en="Infinity pool overlooking the sea">مسبح لا متناهي مطل على البحر</span>
+                                </li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="سبا بحري متخصص" data-en="Specialized marine spa">سبا بحري متخصص</span>
+                                </li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="قاعات أفراح بإطلالة بحرية" data-en="Wedding halls with sea view">قاعات
+                                        أفراح بإطلالة بحرية</span></li>
+                                <li class="my-2"><i class="fas fa-check text-primary px-2"></i><span
+                                        data-ar="خدمة النقل من وإلى المطار" data-en="Airport transfer service">خدمة
+                                        النقل من وإلى المطار</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="my-0" data-ar="معلومات التواصل" data-en="Contact Information">معلومات التواصل
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="contact-item d-flex align-items-center my-3">
+                                <i class="fas fa-map-marker-alt fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="العنوان:" data-en="Address:">العنوان:</strong><br>
+                                    <span data-ar="جدة، كورنيش جدة، شارع الأمير عبدالمجيد"
+                                        data-en="Jeddah, Jeddah Corniche, Prince Abdulmajeed Street">
+                                        جدة، كورنيش جدة، شارع الأمير عبدالمجيد
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item d-flex align-items-center my-3">
+                                <i class="fas fa-phone fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="الهاتف:" data-en="Phone:">الهاتف:</strong><br>
+                                    <span>+966 12 123 4567</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item d-flex align-items-center my-3">
+                                <i class="fas fa-envelope fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="البريد الإلكتروني:" data-en="Email:">البريد
+                                        الإلكتروني:</strong><br>
+                                    <span>jeddah@ionhotel.com</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item d-flex align-items-center my-4">
+                                <i class="fas fa-clock fa-lg text-primary px-3"></i>
+                                <div>
+                                    <strong data-ar="ساعات العمل:" data-en="Working Hours:">ساعات العمل:</strong><br>
+                                    <span data-ar="24 ساعة يومياً" data-en="24 hours daily">24 ساعة يومياً</span>
+                                </div>
+                            </div>
+
+                            <a href="index.html#contact" class="btn btn-primary w-100" data-ar="احجز الآن"
+                                data-en="Book Now">
+                                احجز الآن
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h2 class="display-5 fw-bold text-primary" data-ar="صور الفندق" data-en="Hotel Gallery">صور الفندق
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="ION Hotel Jeddah"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Sea View Room"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Pool Area"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Restaurant"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Beach View"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded shadow gallery-img" alt="Suite"
+                        style="height: 250px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="my-3">ION Hotel Jeddah</h3>
+                    <p data-ar="فندق أيون جدة - تجربة إقامة فاخرة على ساحل البحر الأحمر"
+                        data-en="ION Hotel Jeddah - Luxury accommodation experience on the Red Sea coast">
+                        فندق أيون جدة - تجربة إقامة فاخرة على ساحل البحر الأحمر
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="my-3" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="index.html" class="text-light text-decoration-none" data-ar="الرئيسية"
+                                data-en="Home">الرئيسية</a></li>
+                        <li class="my-2"><a href="index.html#branches" class="text-light text-decoration-none"
+                                data-ar="الفروع" data-en="Branches">الفروع</a></li>
+                        <li class="my-2"><a href="index.html#rooms" class="text-light text-decoration-none"
+                                data-ar="الغرف" data-en="Rooms">الغرف</a></li>
+                        <li class="my-2"><a href="index.html#services" class="text-light text-decoration-none"
+                                data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="my-3" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h3>
+                    <p><i class="fas fa-phone px-2"></i> +966 12 123 4567</p>
+                    <p><i class="fas fa-envelope px-2"></i> jeddah@ionhotel.com</p>
+                    <p><i class="fas fa-map-marker-alt px-2"></i> <span data-ar="جدة، الكورنيش"
+                            data-en="Jeddah, Corniche">جدة، الكورنيش</span></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="my-0" data-ar="&copy; 2025 ION Hotel. جميع الحقوق محفوظة."
+                        data-en="&copy; 2025 ION Hotel. All rights reserved.">
+                        &copy; 2025 ION Hotel. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
