@@ -26,53 +26,97 @@
     <header class="header fixed-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <div class="navbar-brand d-flex align-items-center">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=60&q=80"
-                        alt="ION Hotel" class="logo px-3">
-                    <h1 class="my-0 hotel-name">ION Hotel</h1>
-                </div>
+                <!-- Brand -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80"
+                        alt="ION Hotel" class="logo me-3">
+                    <div class="brand-text">
+                        <h1 class="mb-0 hotel-name">ION Hotel</h1>
+                        <small class="brand-tagline text-muted d-none d-md-block" data-ar="تجربة إقامة استثنائية"
+                            data-en="Exceptional Stay Experience">
+                            تجربة إقامة استثنائية
+                        </small>
+                    </div>
+                </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Navigation Menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav px-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                            <a class="nav-link" href="index.html" data-ar="الرئيسية" data-en="Home">
+                                <i class="fas fa-home d-lg-none me-2"></i>الرئيسية
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#branches" data-ar="الفروع"
-                                data-en="Branches">الفروع</a>
+                            <a class="nav-link" href="index.html#branches" data-ar="الفروع" data-en="Branches">
+                                <i class="fas fa-building d-lg-none me-2"></i>الفروع
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#rooms" data-ar="الغرف" data-en="Rooms">الغرف</a>
+                            <a class="nav-link" href="index.html#rooms" data-ar="الغرف" data-en="Rooms">
+                                <i class="fas fa-bed d-lg-none me-2"></i>الغرف
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#services" data-ar="الخدمات"
-                                data-en="Services">الخدمات</a>
+                            <a class="nav-link" href="index.html#services" data-ar="الخدمات" data-en="Services">
+                                <i class="fas fa-concierge-bell d-lg-none me-2"></i>الخدمات
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact" data-ar="اتصل بنا" data-en="Contact">اتصل
-                                بنا</a>
+                            <a class="nav-link" href="index.html#gallery" data-ar="المعرض" data-en="Gallery">
+                                <i class="fas fa-images d-lg-none me-2"></i>المعرض
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact" data-ar="اتصل بنا" data-en="Contact">
+                                <i class="fas fa-envelope d-lg-none me-2"></i>اتصل بنا
+                            </a>
                         </li>
                     </ul>
 
+                    <!-- Mobile Language Switcher -->
                     <div class="language-switcher">
-                        <button class="btn btn-outline-primary btn-sm lang-btn active" data-lang="ar">العربية</button>
-                        <button class="btn btn-outline-primary btn-sm lang-btn" data-lang="en">English</button>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100 lang-btn active" data-lang="ar">
+                                    <i class="fas fa-globe me-2"></i>العربية
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-outline-primary w-100 lang-btn" data-lang="en">
+                                    <i class="fas fa-globe me-2"></i>English
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Contact Info -->
+                    <div class="mobile-contact d-lg-none mt-3 pt-3 border-top text-center">
+                        <div class="contact-item mb-2">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            <a href="tel:+966111234567" class="text-decoration-none ltr-number">+966 11 123 4567</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <a href="mailto:info@ionhotel.com" class="text-decoration-none">info@ionhotel.com</a>
+                        </div>
                     </div>
                 </div>
+            </div>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero position-relative" style="height: 70vh;">
+    <section class="hero position-relative" style="height: 100vh;">
         <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
             class="w-100 h-100" style="object-fit: cover; filter: brightness(0.6);" alt="ION Hotel Mecca">
 
-        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
             <div class="container text-center text-white">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -190,7 +234,7 @@
                                 <i class="fas fa-phone fa-lg text-primary px-3"></i>
                                 <div>
                                     <strong data-ar="الهاتف:" data-en="Phone:">الهاتف:</strong><br>
-                                    <span>+966 12 987 6543</span>
+                                    <span class="ltr-number">+966 12 987 6543</span>
                                 </div>
                             </div>
 
@@ -293,7 +337,7 @@
                 </div>
                 <div class="col-lg-4">
                     <h3 class="my-3" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h3>
-                    <p><i class="fas fa-phone px-2"></i> +966 12 987 6543</p>
+                    <p><i class="fas fa-phone px-2"></i><span class="ltr-number">+966 13 123 4567</span></p>
                     <p><i class="fas fa-envelope px-2"></i> mecca@ionhotel.com</p>
                     <p><i class="fas fa-map-marker-alt px-2"></i> <span data-ar="مكة المكرمة، العزيزية"
                             data-en="Mecca, Al Aziziyah">مكة المكرمة، العزيزية</span></p>
@@ -304,7 +348,7 @@
                 <div class="col-12 text-center">
                     <p class="my-0" data-ar="&copy; 2025 ION Hotel. جميع الحقوق محفوظة."
                         data-en="&copy; 2025 ION Hotel. All rights reserved.">
-                        &copy; 2025 ION Hotel. جميع الحقوق محفوظة.
+                        &copy; <span id="year-display">2025</span> ION Hotel. جميع الحقوق محفوظة.
                     </p>
                 </div>
             </div>

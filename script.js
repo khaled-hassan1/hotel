@@ -232,46 +232,46 @@ function updateActiveNavLink() {
 }
 
 // Preloader
-function showPreloader() {
-    const preloader = document.createElement('div');
-    preloader.id = 'preloader';
-    preloader.innerHTML = `
-        <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        </div>
-    `;
-    preloader.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: white;
-        z-index: 9999;
-        transition: opacity 0.5s ease;
-    `;
+// function showPreloader() {
+//     const preloader = document.createElement('div');
+//     preloader.id = 'preloader';
+//     preloader.innerHTML = `
+//         <div class="d-flex justify-content-center align-items-center h-100">
+//             <div class="spinner-border text-primary" role="status">
+//                 <span class="visually-hidden">Loading...</span>
+//             </div>
+//         </div>
+//     `;
+//     preloader.style.cssText = `
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background: white;
+//         z-index: 9999;
+//         transition: opacity 0.5s ease;
+//     `;
 
-    document.body.appendChild(preloader);
+//     document.body.appendChild(preloader);
 
-    // Hide preloader when page loads
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                if (preloader.parentNode) {
-                    preloader.remove();
-                }
-            }, 500);
-        }, 1000);
-    });
-}
+//     // Hide preloader when page loads
+//     window.addEventListener('load', () => {
+//         setTimeout(() => {
+//             preloader.style.opacity = '0';
+//             setTimeout(() => {
+//                 if (preloader.parentNode) {
+//                     preloader.remove();
+//                 }
+//             }, 500);
+//         }, 1000);
+//     });
+// }
 
 // Initialize Everything
 document.addEventListener('DOMContentLoaded', function () {
     // Show preloader
-    showPreloader();
+    // showPreloader();
 
     // Language switcher event listeners
     const langButtons = document.querySelectorAll('.lang-btn');
@@ -351,3 +351,9 @@ window.addEventListener('load', function () {
 
     images.forEach(img => imageObserver.observe(img));
 });
+
+const currentYear = new Date().getFullYear();
+// Get the element by its current ID
+const yearElement = document.getElementById('year-display');
+// Update the text content of the element
+yearElement.textContent = currentYear;

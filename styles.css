@@ -256,6 +256,7 @@ body[dir="rtl"] .hotel-name {
 .lang-btn:hover:not(.active) {
     background-color: rgba(44, 90, 160, 0.1);
     border-color: var(--primary-color);
+    color: var(--primary-color);
     transform: translateY(-1px);
 }
 
@@ -629,4 +630,13 @@ section {
     .btn {
         display: none !important;
     }
+}
+.bg-primary{
+    background-color: var(--primary-color) !important
+}
+
+.ltr-number {
+    direction: ltr;
+    unicode-bidi: plaintext;
+    font-family: Arial, Helvetica, sans-serif;
 }

@@ -24,7 +24,7 @@
 <body>
     <!-- Header -->
     <header class="header fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Brand -->
                 <a class="navbar-brand d-flex align-items-center" href="#home">
@@ -39,51 +39,13 @@
                     </div>
                 </a>
 
-                <!-- Desktop Language Switcher -->
-                <div class="language-switcher-desktop d-none d-lg-flex me-3">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Language Switcher">
-                        <button class="btn btn-outline lang-btn mx-1 active" data-lang="ar" title="العربية">
-                            <i class="fas fa-globe me-1"></i>العربية
-                        </button>
-                        <button class="btn btn-outline lang-btn mx-1" data-lang="en" title="English">
-                            <i class="fas fa-globe me-1"></i>English
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Tablet Language Switcher -->
-                <!-- <div class="language-switcher-tablet d-none d-md-flex d-lg-none me-2">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Language Switcher">
-                        <button class="btn btn-outline-primary lang-btn active" data-lang="ar" title="العربية">
-                            <i class="fas fa-globe me-1"></i>عربي
-                        </button>
-                        <button class="btn btn-outline-primary lang-btn" data-lang="en" title="English">
-                            <i class="fas fa-globe me-1"></i>EN
-                        </button>
-                    </div>
-                </div> -->
-
-                <!-- Small Screen Language Switcher -->
-                <!-- <div class="language-switcher-sm d-flex d-md-none me-2">
-                    <div class="btn-group btn-group-sm" role="group" aria-label="Language Switcher">
-                        <button class="btn btn-outline-primary lang-btn active" data-lang="ar" title="العربية">
-                            <i class="fas fa-globe"></i>
-                        </button>
-                        <button class="btn btn-outline-primary lang-btn" data-lang="en" title="English">
-                            <i class="fas fa-globe"></i>
-                        </button>
-                    </div>
-                </div> -->
-
-                <!-- Mobile Menu Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Navigation Menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav px-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="#home" data-ar="الرئيسية" data-en="Home">
                                 <i class="fas fa-home d-lg-none me-2"></i>الرئيسية
@@ -117,7 +79,7 @@
                     </ul>
 
                     <!-- Mobile Language Switcher -->
-                    <div class="language-switcher-mobile d-lg-none mt-3 pt-3 border-top">
+                    <div class="language-switcher">
                         <div class="row g-2">
                             <div class="col-6">
                                 <button class="btn btn-outline-primary w-100 lang-btn active" data-lang="ar">
@@ -136,7 +98,7 @@
                     <div class="mobile-contact d-lg-none mt-3 pt-3 border-top text-center">
                         <div class="contact-item mb-2">
                             <i class="fas fa-phone text-primary me-2"></i>
-                            <a href="tel:+966111234567" class="text-decoration-none">+966 11 123 4567</a>
+                            <a href="tel:+966111234567" class="text-decoration-none ltr-number">+966 11 123 4567</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope text-primary me-2"></i>
@@ -230,7 +192,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-phone text-primary px-2"></i>
-                                    <span>+966 11 123 4567</span>
+                                    <span class="ltr-number">+966 11 123 4567</span>
                                 </div>
                             </div>
                             <a href="riyadh.html" class="btn btn-outline-primary" data-ar="المزيد من التفاصيل"
@@ -259,7 +221,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-phone text-primary px-2"></i>
-                                    <span>+966 12 123 4567</span>
+                                    <span class="ltr-number">+966 12 123 4567</span>
                                 </div>
                             </div>
                             <a href="jeddah.html" class="btn btn-outline-primary" data-ar="المزيد من التفاصيل"
@@ -289,7 +251,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-phone text-primary px-2"></i>
-                                    <span>+966 13 123 4567</span>
+                                    <span class="ltr-number">+966 13 123 4567</span>
                                 </div>
                             </div>
                             <a href="dammam.html" class="btn btn-outline-primary" data-ar="المزيد من التفاصيل"
@@ -320,7 +282,7 @@
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-phone text-primary px-2"></i>
-                                    <span>+966 12 987 6543</span>
+                                    <span class="ltr-number">+966 12 987 6543</span>
                                 </div>
                             </div>
                             <a href="mecca.html" class="btn btn-outline-primary" data-ar="المزيد من التفاصيل"
@@ -620,7 +582,7 @@
                             </div>
                             <div>
                                 <h5 class="my-1" data-ar="الهاتف" data-en="Phone">الهاتف</h5>
-                                <p class="my-0">+966 11 123 4567</p>
+                                <p class="my-0"><span class="ltr-number">+966 13 123 4567</span></p>
                             </div>
                         </div>
 
@@ -723,10 +685,14 @@
                     <div class="footer-section">
                         <h3 class="my-3" data-ar="فروعنا" data-en="Our Branches">فروعنا</h3>
                         <ul class="list-unstyled">
-                            <li class="my-2" data-ar="الرياض" data-en="Riyadh">الرياض</li>
-                            <li class="my-2" data-ar="جدة" data-en="Jeddah">جدة</li>
-                            <li class="my-2" data-ar="الدمام" data-en="Dammam">الدمام</li>
-                            <li class="my-2" data-ar="مكة المكرمة" data-en="Mecca">مكة المكرمة</li>
+                            <li class="my-2"><a href="riyadh.html" class="text-light text-decoration-none"
+                                    data-ar="الرياض" data-en="Riyadh">الرياض</a></li>
+                            <li class="my-2"><a href="jeddah.html" class="text-light text-decoration-none" data-ar="جدة"
+                                    data-en="Jeddah">جدة</a></li>
+                            <li class="my-2"><a href="dammam.html" class="text-light text-decoration-none"
+                                    data-ar="الدمام" data-en="Dammam">الدمام</a></li>
+                            <li class="my-2"><a href="mecca.html" class="text-light text-decoration-none"
+                                    data-ar="مكة المكرمة" data-en="Mecca">مكة المكرمة</a></li>
                         </ul>
                     </div>
                 </div>
@@ -736,7 +702,7 @@
                 <div class="col-12 text-center">
                     <p class="my-0" data-ar="&copy; 2025 ION Hotel. جميع الحقوق محفوظة."
                         data-en="&copy; 2025 ION Hotel. All rights reserved.">
-                        &copy; 2025 ION Hotel. جميع الحقوق محفوظة.
+                        &copy; <span id="year-display">2205</span> ION Hotel. جميع الحقوق محفوظة.
                     </p>
                 </div>
             </div>
