@@ -30,7 +30,7 @@
 ## الصور المطلوبة
 - `ion-logo.png` - شعار الفندق
 - `hero1.jpg`, `hero2.jpg`, `hero3.jpg` - صور القسم الرئيسي
-- `branch-riyadh.jpg`, `branch-jeddah.jpg`, `branch-dammam.jpg`, `branch-mecca.jpg` - صور الفروع
+- `branch-riyadh.jpg`, `branch-nada.jpg`, `branch-dammam.jpg`, `branch-mecca.jpg` - صور الفروع
 - `standard-room.jpg`, `deluxe-room.jpg`, `suite.jpg` - صور الغرف
 - `gallery1.jpg` إلى `gallery6.jpg` - صور المعرض
 
