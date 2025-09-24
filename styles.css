@@ -93,16 +93,12 @@ body[dir="rtl"] .hotel-name {
 .logo {
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     object-fit: cover;
-    border: 2px solid rgba(44, 90, 160, 0.1);
+    /* border: 2px solid rgba(44, 90, 160, 0.1); */
     transition: all 0.3s ease;
 }
 
-.logo:hover {
-    border-color: var(--primary-color);
-    box-shadow: 0 2px 8px rgba(44, 90, 160, 0.2);
-}
 
 /* Navigation Links */
 .nav-link {

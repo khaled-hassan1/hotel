@@ -53,7 +53,7 @@ function switchLanguage(lang) {
     localStorage.setItem('preferredLanguage', lang);
 
     // Update page title
-    document.title = lang === 'ar' ? 'ION Hotel - فندق أيون' : 'ION Hotel - Luxury Accommodation';
+    document.title = lang === 'ar' ? 'ION Hotel - فندق ايون' : 'ION Hotel - Luxury Accommodation';
 }
 
 // Navbar Scroll Effect
