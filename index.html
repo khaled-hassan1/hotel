@@ -11,9 +11,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-     <!-- Open Graph Meta Tags -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="ION Hotel - فندق ايون">
-    <meta property="og:description" content="Experience luxury and comfort at ION Hotel. Premium accommodations with exceptional service in the heart of the city.">
+    <meta property="og:description"
+        content="Experience luxury and comfort at ION Hotel. Premium accommodations with exceptional service in the heart of the city.">
     <meta property="og:image" content="https://khaled-hassan1.github.io/hotel/images/logo.png">
     <meta property="og:image:alt" content="ION Hotel - Luxury accommodation">
     <meta property="og:url" content="https://khaled-hassan1.github.io/hotel/">
@@ -21,16 +22,18 @@
     <meta property="og:site_name" content="ION Hotel">
     <meta property="og:locale" content="ar_EG">
     <meta property="og:locale:alternate" content="en_US">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ION Hotel - فندق ايون">
-    <meta name="twitter:description" content="Experience luxury and comfort at ION Hotel. Premium accommodations with exceptional service in the heart of the city.">
+    <meta name="twitter:description"
+        content="Experience luxury and comfort at ION Hotel. Premium accommodations with exceptional service in the heart of the city.">
     <meta name="twitter:image" content="https://khaled-hassan1.github.io/hotel/images/logo.png">
     <meta name="twitter:image:alt" content="ION Hotel - Luxury accommodation">
-    
+
     <!-- Additional SEO Meta Tags -->
-    <meta name="description" content="Experience luxury and comfort at ION Hotel. Premium accommodations with exceptional service in the heart of the city.">
+    <meta name="description"
+        content="Experience luxury and comfort at ION Hotel. Premium accommodations with exceptional service in the heart of the city.">
     <meta name="keywords" content="ION Hotel, luxury hotel, accommodation, premium service, فندق ايون">
     <meta name="author" content="ION Hotel">
 
@@ -693,7 +696,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-light py-5">
         <div class="container">
             <div class="row g-4">
@@ -742,6 +744,22 @@
                 </div>
             </div>
             <hr class="my-4">
+
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#certificateModal" class="d-inline-block">
+                        <img src="images/iso.png" alt="ISO 22000:2018 Certificate of Conformance for ION Hotel"
+                            class="img-fluid"
+                            style="max-height: 250px; width: auto; border: 1px solid #ccc; padding: 5px; cursor: zoom-in;">
+                    </a>
+                    <p class="mt-2 small text-light" data-en="ISO 22000:2018 Food Safety Management System Certified."
+                        data-ar="حاصل على شهادة الأيزو 22000:2018 لنظام إدارة سلامة الغذاء.">
+                        ISO 22000:2018 Food Safety Management System Certified.
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+
             <div class="row">
                 <div class="col-12 text-center">
                     <p class="my-0" data-ar="&copy; 2025 ION Hotel. جميع الحقوق محفوظة."
@@ -752,6 +770,32 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 d-flex justify-content-between align-items-center">
+                    <div class="zoom-controls">
+                        <button type="button" class="btn btn-secondary btn-sm" id="zoomInBtn" title="Zoom In">
+                            <i class="bi bi-zoom-in"></i> </button>
+                        <button type="button" class="btn btn-secondary btn-sm mx-1" id="zoomOutBtn" title="Zoom Out">
+                            <i class="bi bi-zoom-out"></i> </button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="zoomResetBtn" title="Reset Zoom">
+                            <i class="bi bi-arrow-counterclockwise"></i> </button>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 overflow-auto"> <img src="images/iso.png"
+                        class="img-fluid zoomable-image" id="modalCertificateImage"
+                        alt="ISO 22000:2018 Certificate of Conformance for ION Hotel - Full View"
+                        style="max-width: 100%; height: auto; transform: scale(1); transform-origin: center center; transition: transform 0.1s ease-out;">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Gallery Modal -->
     <div class="modal fade" id="galleryModal" tabindex="-1">

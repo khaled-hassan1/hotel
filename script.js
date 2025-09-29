@@ -357,3 +357,125 @@ const currentYear = new Date().getFullYear();
 const yearElement = document.getElementById('year-display');
 // Update the text content of the element
 yearElement.textContent = currentYear;
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modalImage = document.getElementById('modalCertificateImage');
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+    const zoomResetBtn = document.getElementById('zoomResetBtn');
+    const certificateModal = document.getElementById('certificateModal');
+
+    let currentZoom = 1;
+    const zoomStep = 0.1;
+    const maxZoom = 3;
+    const minZoom = 0.5;
+
+    function applyZoom() {
+        modalImage.style.transform = `scale(${currentZoom})`;
+    }
+
+    zoomInBtn.addEventListener('click', () => {
+        if (currentZoom < maxZoom) {
+            currentZoom += zoomStep;
+            applyZoom();
+        }
+    });
+
+    zoomOutBtn.addEventListener('click', () => {
+        if (currentZoom > minZoom) {
+            currentZoom -= zoomStep;
+            applyZoom();
+        }
+    });
+
+    zoomResetBtn.addEventListener('click', () => {
+        currentZoom = 1;
+        applyZoom();
+        // Reset any drag position too
+        modalImage.style.left = '0px';
+        modalImage.style.top = '0px';
+    });
+
+    // Reset zoom when modal is closed or opened again
+    certificateModal.addEventListener('hidden.bs.modal', () => {
+        currentZoom = 1;
+        applyZoom();
+        modalImage.style.left = '0px';
+        modalImage.style.top = '0px';
+    });
+    certificateModal.addEventListener('shown.bs.modal', () => {
+        currentZoom = 1; // Ensure it starts at 1x on show
+        applyZoom();
+        modalImage.style.left = '0px';
+        modalImage.style.top = '0px';
+    });
+
+    // Optional: Add drag functionality when zoomed
+    let isDragging = false;
+    let startX, startY;
+    let imgX = 0, imgY = 0;
+
+    modalImage.addEventListener('mousedown', (e) => {
+        if (currentZoom > 1) { // Only enable drag if zoomed in
+            isDragging = true;
+            startX = e.clientX;
+            startY = e.clientY;
+            modalImage.style.cursor = 'grabbing';
+            modalImage.style.transition = 'none'; // Disable transition during drag
+            e.preventDefault(); // Prevent default image drag behavior
+        }
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
+
+        imgX += dx;
+        imgY += dy;
+
+        modalImage.style.left = `${imgX}px`;
+        modalImage.style.top = `${imgY}px`;
+        
+        startX = e.clientX;
+        startY = e.clientY;
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+        modalImage.style.cursor = (currentZoom > 1) ? 'grab' : 'zoom-in';
+        modalImage.style.transition = 'transform 0.1s ease-out'; // Re-enable transition
+    });
+
+    // Optional: Mouse wheel zoom
+    modalImage.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const rect = modalImage.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+
+        // Calculate transform origin relative to the image
+        modalImage.style.transformOrigin = `${mouseX}px ${mouseY}px`;
+
+        if (e.deltaY < 0) { // Zoom in
+            if (currentZoom < maxZoom) {
+                currentZoom += zoomStep;
+            }
+        } else { // Zoom out
+            if (currentZoom > minZoom) {
+                currentZoom -= zoomStep;
+            }
+        }
+        applyZoom();
+    });
+
+    // Ensure reset on modal close if dragged
+    certificateModal.addEventListener('hidden.bs.modal', () => {
+        modalImage.style.transformOrigin = 'center center'; // Reset origin
+        modalImage.style.left = '0px';
+        modalImage.style.top = '0px';
+        imgX = 0;
+        imgY = 0;
+    });
+});
